@@ -9,6 +9,7 @@ class Scraper
     index = Nokogiri::HTML(html)
     index.css("div.student-card").each do |student|
       student_details = {}
+      binding.pry 
   end
 
   def self.scrape_profile_page(profile_url)
